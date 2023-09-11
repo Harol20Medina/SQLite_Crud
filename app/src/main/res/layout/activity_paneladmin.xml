@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewBienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:gravity="center"
+            android:text="Bienvenido"
+            android:textAlignment="gravity"
+            android:textColor="#D64B4B"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textViewRolUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textViewFullNameUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonCareer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carreras" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Materias" />
+
+            <RadioButton
+                android:id="@+id/radioButtonStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alumnos" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profesores" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTeacherSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asignar Profesor a Materia" />
+
+            <RadioButton
+                android:id="@+id/radioButtonStudentSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asignar Estudiante a Materias" />
+
+            <RadioButton
+                android:id="@+id/radioButtonQueries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Realizar Consultas" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D64B4B"
+            android:text="Salir" />
+    </LinearLayout>
+</RelativeLayout>
